@@ -4,7 +4,6 @@ import Vuetify from 'vuetify'
 import Router from './router'
 import store from './store'
 import App from './template/App';
-import Sample from './template/Sample';
 Vue.use(Vuetify)
 
 new Vue({
@@ -12,9 +11,9 @@ new Vue({
     store,
     router:Router,
     vuetify: new Vuetify(),
-    components : {
-        App,
-        Sample
-    }
-    // render: h=>h(App)
+    // components : {
+    //     App,
+    //     Sample
+    // }
+    render: h=>h(App)
 });

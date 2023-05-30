@@ -25,3 +25,8 @@ Route::post('/getUser', function(Request $request){
     // return $request;
     return User::find($request->id);
 });
+
+Route::middleware('auth:api')->group(function () {
+    // Protected routes
+    // ...
+});
